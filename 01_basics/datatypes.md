@@ -24,3 +24,84 @@ Object types /Data Types
 - Advance : Decorators , Generatorss , Iterators , MetaProgramming
 
 - String is immutable
+
+
+>>> import sys
+>>> sys.getrefcount(24601)
+3
+>>> sys.getrefcount('Siddhes')
+3
+>>> sys.getrefcount('Rama')
+3
+>>> a = 3
+>>> a = 'chaiaurcode'
+>>> print(a)
+chaiaurcode
+>>> a = 3.14
+>>> a = 5
+>>> b = 2
+>>> a 
+5
+>>> b
+2
+>>> a = a + 3
+>>> a
+8
+>>> myListOne = [1 , 2 , 3]
+>>> myListTwo = myListOne 
+>>> myListTwo
+[1, 2, 3]
+>>> myListOne[0] = 33
+>>> myListOne
+[33, 2, 3]
+>>> myListTwo
+[33, 2, 3]
+>>> myListOne[0] = 90
+>>> myListOne
+[90, 2, 3]
+>>> myListTwo
+[90, 2, 3]
+>>> h1 = [1 , 2 , 3] 
+>>> h2 = h1[:]  
+>>> h1 
+[1, 2, 3]
+>>> h2
+[1, 2, 3]
+>>> h1[0] = 2
+>>> h1
+[2, 2, 3]
+>>> h2
+[1, 2, 3]
+>>> import copy
+>>> h2 = copy.copy(h1)
+>>> h2 = copy.deepcopy(h1)
+
+>>> 
+>>> n = [1, 2, 3]
+>>> m = n
+>>> m
+[1, 2, 3]
+>>> n
+[1, 2, 3]
+>>> m == n 
+True
+>>> m is n (checking memory reference)
+True
+>>> 
+>>> m = n
+>>> m
+[1, 2, 3]
+>>> n
+[1, 2, 3]
+>>> m == n
+True
+>>> m is n
+True
+>>>
+>>> 
+>>> n = [1 , 2 , 3]
+>>> m is n
+False
+>>> m == n
+True
+>>> 
